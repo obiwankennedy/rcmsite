@@ -1,0 +1,10 @@
+<h2>Les jeux<h3>
+{% if games %}
+    <ul>
+    {% for game in games %}
+        <li><a href="/inscriptions/{{ question.id }}/gamedetails">{{ game.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No games are available.</p>
+{% endif %}
